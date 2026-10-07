@@ -1,0 +1,1 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"></head><body style="font:16px Arial;color:#172433"><h1>Alerta de inicio de sesión</h1><p>Hola, {{ $user->name }}.</p><p>Se inició una sesión en tu cuenta el {{ $loginTime }}.</p><p>Si reconoces esta actividad, no necesitas hacer nada. Si no la reconoces, revisa el acceso a tu cuenta.</p></body></html>

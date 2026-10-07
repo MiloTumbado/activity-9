@@ -2,6 +2,7 @@
 namespace Tests\Feature;
 use Tests\TestCase; use Illuminate\Foundation\Testing\RefreshDatabase; use App\User; use Illuminate\Support\Facades\Hash;
 class AuthTest extends TestCase { use RefreshDatabase;
+ protected function setUp():void {parent::setUp(); \Illuminate\Support\Facades\Mail::fake();}
  public function test_guests_cannot_open_dashboard() {$this->get('/dashboard')->assertRedirect('/login');$this->get('/')->assertOk()->assertSee('Registrarse')->assertDontSee('Cerrar sesión');}
  public function test_register_login_logout_and_nav() {
   $this->post('/register',['name'=>'Alumno de prueba','email'=>'demo@example.test','password'=>'Prueba-2026','password_confirmation'=>'Prueba-2026'])->assertRedirect('/dashboard');

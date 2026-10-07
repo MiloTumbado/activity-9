@@ -1,0 +1,1 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"></head><body style="font:16px Arial;color:#172433"><h1>Bienvenido a tu espacio de aprendizaje</h1><p>Hola, {{ $user->name }}.</p><p>Tu cuenta se registró correctamente. Ya puedes entrar a tu dashboard.</p><p>Gracias por unirte.</p></body></html>
